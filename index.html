@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH TUBE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-left"><img src="Logo.png" alt=""></div>
+        <div onclick="sortByView()"  id="sort-view"> <button> Sort By View</button></div>
+        <div onclick="openBlog()" class="nav-right"> <button id="blog"><a href="blog.html" target="_blank"></a>Blog</button></div>
+    </nav>
+    
+
+    <div id="category">
+        <div onclick="fetchCategoryData(1000)" id="All"><button>All</button></div>
+        <div onclick="fetchCategoryData(1001)" id="Music"><button>Music</button></div>
+        <div onclick="fetchCategoryData(1003)" id="Comedy"><button>Comedy</button></div>
+        <div onclick="fetchCategoryData(1005)" id="Drawing"><button>Drawing</button></div>
+    </div>
+ 
+    <div id="container"></div>
+
+    
+
+    
+
+   
+
+    <script src="project.js"></script>
+</body>
+</html>
